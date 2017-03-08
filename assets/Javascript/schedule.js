@@ -50,9 +50,7 @@ database.ref().on("child_added", function(childSnapshot, prevChildKey) {
   var trainDestination = childSnapshot.val().destination;
   var firstTrain = childSnapshot.val().first;
   var trainFrequency = childSnapshot.val().frequency;
-
-  // Prettify the "first train"
-  
+  	
     var trnFrequency = 4;
 
     // Time is 3:30 AM
@@ -75,7 +73,7 @@ database.ref().on("child_added", function(childSnapshot, prevChildKey) {
     var tMinutesTillTrain = trnFrequency - tRemainder;
 
     // Next Train
-    var nextTrain = moment().add(tMinutesTillTrain, "hh:mm");
+    var nextTrain = moment().add(tMinutesTillTrain, "minutes");
 
   // Add each train's data into the table
   $("#train-table > tbody").append("<tr><td>" + trainName + "</td><td>" + trainDestination + "</td><td>" +
