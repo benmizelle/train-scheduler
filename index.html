@@ -9,7 +9,9 @@
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!-- google fonts link -->
     <link href="https://fonts.googleapis.com/css?family=Diplomata+SC" rel="stylesheet">
+<!-- My css styleshhet link -->
     <link rel="stylesheet" href="assets/CSS/style.css">
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -24,10 +26,9 @@
 
   <body>
 
-    <!-- Train Schedule Tracker -->
+    
     <div class="container">
 
-      <!-- Jumbotron -->
       <div class="jumbotron">
         <h1 class="text-center">Catch That Train!</h1>
         <h3 class="text-center">Don't be Late for Your Important Date</h3>
@@ -43,7 +44,7 @@
               <h3 class="panel-title"><strong>Current Schedule</strong></h3>
             </div>
             <div class="panel-body">
-              <table class="table table-hover" id='employee-table'>
+              <table class="table table-hover" id='train-table'>
                 <thead>
                   <tr>
                     <th>Train Name</th>
@@ -66,25 +67,25 @@
             </div>
             <div class="panel-body">
 
-              <!-- Entry Form -->
+              <!-- Add Train Form -->
               <form>
                 <div class="form-group">
-                  <label for="employee-name-input">Train Name</label>
-                  <input class="form-control" id="employee-name-input" type="text">
+                  <label for="traine-name-input">Train Name</label>
+                  <input class="form-control" id="train-name-input" type="text">
                 </div>
                 <div class="form-group">
-                  <label for="role-input">Destination</label>
-                  <input class="form-control" id="role-input" type="text">
+                  <label for="destination-input">Destination</label>
+                  <input class="form-control" id="destination-input" type="text">
                 </div>
                 <div class="form-group">
-                  <label for="start-input">First Train Time (DD/MM/YY - ex: 01/01/86)</label>
-                  <input class="form-control" id="start-input" type="text">
+                  <label for="first-input">First Train Time</label>
+                  <input class="form-control" id="first-input" type="text">
                 </div>
                 <div class="form-group">
-                  <label for="rate-input">Frequency (min.)</label>
-                  <input class="form-control" id="rate-input" type="text">
+                  <label for="frequency-input">Frequency (min.)</label>
+                  <input class="form-control" id="frequency-input" type="text">
                 </div>
-                <button class="btn btn-warning" id="add-employee-btn" type="submit">Add Train</button>
+                <button class="btn btn-warning" id="add-train-btn" type="submit">Add Train</button>
               </form>
 
             </div>
@@ -99,7 +100,7 @@
 
 
 <!--My JavaScript file link -->
-    <script src="schedule.js"></script>
+    <script src="assets/Javascript/schedule.js"></script>
 
   </body>
 
